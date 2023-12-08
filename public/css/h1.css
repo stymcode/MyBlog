@@ -1,0 +1,31 @@
+
+h2{
+    font-family: "Incosolata", Consolas, monospace;
+    font-size: 4em;
+    color: #f4f3f1;
+}
+.typewriter{
+    position: relative;
+}
+.typewriter::before,
+.typewriter::after{
+    content: "|";
+    position: absolute;
+    right: 0%;
+    color: #1b1b1b;
+    background-color: #1b1b1b;
+    width: 100%;
+    animation: typwriter 4s steps(150) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typwriter{
+    to {
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
